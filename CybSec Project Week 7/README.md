@@ -15,7 +15,7 @@ Time spent: **6** hours spent in total
 
 <img src="xss.gif">
 
-- [ ] Steps to recreate: Create a post, then make a comment on that post with an exploitable script. Then try exploitable scrpits until one works. The oe used in this example was "<svg onload=alert(1)>".
+- [ ] Steps to recreate: Create a post, then make a comment on that post with an exploitable script. Then try exploitable scrpits until one works. The oe used in this example was "\<svg onload=alert(1)\>".
 
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/4.1/src/wp-admin/includes/class-wp-screen.php)
