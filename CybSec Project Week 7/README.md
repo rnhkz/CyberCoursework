@@ -12,7 +12,9 @@ Time spent: **6** hours spent in total
   - Tested in version: 4.1
   - Fixed in version: 4.1.2
 - [ ] GIF Walkthrough:
-<img src="xss.gif" alt="XSS">
+
+<img src="xss.gif">
+
 - [ ] Steps to recreate: Create a post, then make a comment on that post with an exploitable script. Then try exploitable scrpits until one works. The oe used in this example was "<svg onload=alert(1)>".
 
 - [ ] Affected source code:
@@ -23,7 +25,9 @@ Time spent: **6** hours spent in total
 - [ ] Summary: Accounts were created. Users were then able to be identified based off an error message revealing whenter a username was valid or not.
   - Tested in version: 4.1
 - [ ] GIF Walkthrough:
-<img src="userEnumeration.gif" alt="User Enumeration">
+
+<img src="userEnumeration.gif">
+
 - [ ] Steps to recreate: Start by creating an account, then typing usernames. Make guesses for possible usernames until one gives an error for incorrect password.
 - [ ] Affected source code:
   - [Link 1](127.0.0.1:8080/wp-login.php)
@@ -33,7 +37,9 @@ Time spent: **6** hours spent in total
 - [ ] Summary: User enumeration was used to collect the usernames of registered accounts. A username was then cmopared to a list of common passwords, until one of them created a successful login.
   - Tested in version: 4.1
 - [ ] GIF Walkthrough:
-<img src="pwdEnumeration.gif" alt="Password Enumeration">
+
+<img src="pwdEnumeration.gif">
+
 - [ ] Steps to recreate: Start by creating an account, then typing usernames. Make guesses for possible usernames until one gives an error for incorrect password. Then try common passwords until a successful login occurs.
 - [ ] Affected source code:
   - [Link 1](127.0.0.1:8080/wp-login.php)
